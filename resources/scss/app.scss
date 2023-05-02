@@ -4,5 +4,11 @@
 // body {
 //     background-color: yellow;
 // }
-@import 'partials/header.scss';
-@import 'partials/footer.scss';
+@import '_partials/header.scss';
+@import '_partials/footer.scss';
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
