@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <header>partial</header>
+    @include('partials.header')
     <main>
         @yield('page.main')
     </main>
-    <footer>partial</footer>
+    @include('partials.footer')
 </body>
 </html>
