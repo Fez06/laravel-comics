@@ -3,7 +3,7 @@
 @section('page.main')
     
 
-<div class="jumbo"></div>
+
 
 <div class="bg-cata">
     <div class="container">

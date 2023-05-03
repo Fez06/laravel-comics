@@ -36,4 +36,10 @@ header {
             border-bottom: 4px solid #0282f9;
         }
     }
+    .jumbo {
+        height: 400px;
+        background-image: url('../img/jumbotron.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }

@@ -19,5 +19,6 @@
                 <li>SHOP</li>
             </ul>
         </div>
-    </div>    
+    </div> 
+    <div class="jumbo"></div>   
 </header>

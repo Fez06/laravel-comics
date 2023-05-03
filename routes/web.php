@@ -22,12 +22,12 @@ Route::get('/', function () {
     return view('home', $data);
 })->name('home');
 
-Route::get('/prodotto', function () {
+Route::get('/prodotto/{index}/prodotto', function ($index) {
 
     $data = [
-        'fumetti' => config('fumettiDb')
+        'fumetti' => config('fumettiDb')[$index]
     ];
-
+    // dd($data);
     return view('product', $data);
 })->name('product');
 
