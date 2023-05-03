@@ -1,0 +1,83 @@
+.product {
+
+    .blue-stripe {
+        height: 80px;
+        background-color: #0282f9;
+        
+        .container {
+            width: 70%;
+            position: relative;
+
+            img {
+                height: 300px;
+                width: auto;
+                position: absolute;
+                bottom: -60px;
+            }
+        }
+    }
+
+    .flexy {
+        .container {
+            width: 70%;
+            padding: 60px 0;
+
+            .mainInfo {
+                width: 70%;
+
+                .props {
+                    display: flex;
+                    background-color: greenyellow;
+                    margin: 10px 0;
+                    padding: 8px 8px;
+                    border: 1px solid black;
+
+                    .price-avaible {
+                        display: flex;
+                        
+                        justify-content: space-between;
+                        width: 80%;
+                        
+                        .avaible {
+                            
+                        }
+                    }
+                    .check {
+                        border-left: 1px solid black;
+                        margin: auto;
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .bottom {
+        background-color: beige;
+        .container {
+            width: 70%;
+            padding: 30px 0;
+
+            .flexy {
+                display: flex;
+                justify-content: space-between;
+
+                .left, .right{
+                    width: 47%;
+                    padding: 0 10px;
+
+                    h2 {
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid lightgrey;
+                    }
+                }
+
+                
+                
+               
+            }
+
+        }
+    }
+}

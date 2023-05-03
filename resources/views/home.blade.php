@@ -12,8 +12,12 @@
             @foreach ($fumetti as $fumetto)
             <li>
                 <div class="box">
-                    <img src="{{ $fumetto['thumb'] }}" alt="Immagine">
-                    <div class="serie">{{ $fumetto['title'] }}</div>
+                    
+                   
+                    <a href="{{ route('product', ['index' => $loop->index]) }}">
+                        <img src="{{ $fumetto['thumb'] }}" alt="Immagine">
+                        <div class="serie">{{ $fumetto['title'] }}</div>
+                    </a>
                 </div>
             </li>
             @endforeach
