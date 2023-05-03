@@ -32,12 +32,63 @@
     <div class="bottom">
         <div class="container">
             <div class="flexy">
+
+{{--                          TALENT --}}
+
                 <div class="left">
                     <h2>Talent</h2>
-                    <div class="box"></div>
+                    <div class="box">
+                        <div class="title">Art by:</div>
+                        <div class="content">
+                            @foreach ($fumetti['artists'] as $artist)
+                            @if ($loop->last)
+                                {{ $artist }}
+                            @else
+                                {{ $artist }},  
+                            @endif
+                            @endforeach
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="title">Written by:</div>
+                        <div class="content">
+                            @foreach ($fumetti['writers'] as $writer)
+                            @if ($loop->last)
+                                {{ $writer }}
+                            @else
+                                {{ $writer }},  
+                            @endif
+                            @endforeach
+                        </div>
+                    </div>
+
                 </div>
+
+{{--                          SPECS --}}
+
                 <div class="right">
                     <h2>Specs</h2>
+                    <div class="box">
+                        <div class="title">Series:</div>
+                        <div class="content">
+                            {{$fumetti['series']}}
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="title">U.S. Price:</div>
+                        <div class="content">
+                            {{$fumetti['price']}}
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="title">On Sale Date:</div>
+                        <div class="content">
+                            {{$fumetti['sale_date']}}
+                        </div>
+                    </div>
                 </div>
             </div>
 
